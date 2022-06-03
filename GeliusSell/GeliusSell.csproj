@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="car.png" />
+    <None Remove="heart.png" />
+    <None Remove="mainPicture.jpg" />
+    <None Remove="shoping.png" />
+    <None Remove="stars.png" />
+    <None Remove="weight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="car.png" />
+    <Resource Include="heart.png" />
+    <Resource Include="mainPicture.jpg" />
+    <Resource Include="shoping.png" />
+    <Resource Include="stars.png" />
+    <Resource Include="weight.png" />
+  </ItemGroup>
+
+</Project>

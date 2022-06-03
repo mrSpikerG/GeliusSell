@@ -1,0 +1,53 @@
+﻿<Window x:Class="GeliusSell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeliusSell"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.9*"></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="5" Grid.Column="1" Margin="20" Source="/car.png"></Image>
+        <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="20" Source="/mainPicture.jpg"></Image>
+        <Image Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="0 0 300 70" Source="/stars.png"></Image>
+        
+        <Image Grid.Row="4" Grid.Column="2" Margin="0,10,10,10" Source="/shoping.png" HorizontalAlignment="Right" Width="113"></Image>
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Red"
+        BorderThickness="0" CornerRadius="13" Margin="0 0 52 50" Padding="10 5 10 5" Background="Red">
+            <TextBlock FontSize="14" Foreground="White" FontWeight="Black">-19%</TextBlock>
+        </Border>
+
+        <Border CornerRadius="53" Margin="20 5 20 5" Grid.Row="2" Padding="10" Background="Yellow">
+            <TextBlock FontSize="13" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Black" TextWrapping="Wrap"> ⠀⠀⠀⠀є Підтримка</TextBlock>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="2" CornerRadius="13" Margin="10 10 80 80" Padding="5" Background="White">
+            <Image Source="/heart.png"></Image>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="2" CornerRadius="13" Margin="10 80 80 10" Padding="5" Background="White">
+            <Image Source="/weight.png"></Image>
+        </Border>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="92 0 200 70" FontSize="10" TextWrapping="Wrap"  Foreground="DarkCyan"> 3 отзыва </TextBlock>
+        <TextBlock Grid.Row="3" FontSize="20" Grid.ColumnSpan="3" TextWrapping="Wrap" Margin="10 0 20 0" VerticalAlignment="Center" Foreground="Black"> Аккумулятор Gelius Pro Xiaomi BN46 (Redmi Note 6)</TextBlock>
+        <TextBlock Grid.Row="5" FontSize="20" Grid.ColumnSpan="3" VerticalAlignment="Center" Foreground="Green"> Готов к отправке</TextBlock>
+        <TextBlock Grid.Row="4" FontSize="20" TextDecorations="Strikethrough" Margin ="10 20 0 40" Foreground="DimGray"> 269₴</TextBlock>
+        <TextBlock Grid.Row="4" FontSize="40" Margin ="10 38 0 0" Foreground="Red"> 219₴</TextBlock>
+    </Grid>
+</Window>
